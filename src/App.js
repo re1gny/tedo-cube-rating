@@ -73,7 +73,7 @@ export function App() {
 
   const items = useMemo(() => {
     const sorted = [...(leaderboard || [])].sort(
-      (a, b) => b["total-points"] - a["total-points"]
+      (a, b) => b.totalPoint - a.totalPoint
     );
 
     if (search) {
@@ -165,7 +165,7 @@ export function App() {
                 <span className={styles.id}>{item.id}</span>
               </div>
               <span className={styles.points}>
-                {item["total-points"].toString().padStart(2, "0")}
+                {item.totalPoint.toString().padStart(2, "0")}
               </span>
             </div>
           ))}
