@@ -1,3 +1,4 @@
+import "./fonts.scss";
 import "./index.scss";
 
 import React from "react";
