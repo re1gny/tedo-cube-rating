@@ -5,8 +5,8 @@ import classNames from "classnames";
 import logo from "./assets/logo.svg";
 import styles from "./App.module.scss";
 
-const LEADERBOARD_ENDPOINT_URL = "https://ft-admin-api.sjuksin.ru/";
-const LEADERBOARD_PROJECT_ID = "tedo-cube-event";
+const LEADERBOARD_ENDPOINT_URL = "https://games-admin.fut.ru/api/";
+const LEADERBOARD_PROJECT_ID = "tedo-cube";
 
 const ftClient = new FTClient(LEADERBOARD_ENDPOINT_URL, LEADERBOARD_PROJECT_ID);
 
